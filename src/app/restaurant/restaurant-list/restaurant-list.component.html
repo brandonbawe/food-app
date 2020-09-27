@@ -1,0 +1,119 @@
+
+<div class="container">
+    <div class="list-group" *ngIf="restaurants.length">
+        <div class="card mb-3" *ngFor="let restaurant of restaurants">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="{{ restaurant.images.thumbnail }}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ restaurant.name }}</h5>
+                        <p class="card-text">{{ restaurant.address.street }}, {{ restaurant.address.city }}</p>
+                        <p class="card-text">
+                            <small class="badge badge-primary">open/close</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary mt-2" routerLink='/restaurants/:id'>
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="assets/images/resto3.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Le Baron</h5>
+                        <p class="card-text">
+                            Bastos, Yaounde
+                        </p>
+                        <p class="card-text">
+                            <small class="badge badge-primary">open/close</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary mt-2" [routerLink]="['/restaurants']">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="assets/images/b-blues.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">B-Blues</h5>
+                        <p class="card-text">
+                            Simbock, Yaounde
+                        </p>
+                        <p class="card-text">
+                            <small class="badge badge-primary">open/close</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary mt-2" [routerLink]="['/restaurants']">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="assets/images/resto4.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Main Oasis</h5>
+                        <p class="card-text">
+                            Bali, Douala
+                        </p>
+                        <p class="card-text">
+                            <small class="badge badge-primary">open/close</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary mt-2" [routerLink]="['/restaurants']">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="assets/images/graces.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Graces Cafe</h5>
+                        <p class="card-text">
+                            German Trench, Bamenda
+                        </p>
+                        <p class="card-text">
+                            <small class="badge badge-primary">open/close</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary mt-2" [routerLink]="['/restaurants']">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
